@@ -1,7 +1,7 @@
 import turtle
 
 # Set up screen
-def draw(speed):
+def draw(speed, x_offset):
     # Create turtle
     t = turtle.Pen()
     t.shapesize(2,2,2)
@@ -9,7 +9,7 @@ def draw(speed):
 
     # Top tree section
     t.up()
-    t.setposition(-60, 100)
+    t.setposition(x_offset + -60, 100)
     t.down()
     t.fillcolor('green')
     t.begin_fill()
@@ -22,7 +22,7 @@ def draw(speed):
 
     # Middle tree section
     t.up()
-    t.setx(-35)
+    t.setx(x_offset + -35)
     t.down()
     t.begin_fill()
     t.fd(100)
@@ -34,7 +34,7 @@ def draw(speed):
 
     ## Bottom section
     t.up()
-    t.setposition(-45,24)
+    t.setposition(x_offset + -45,24)
     t.down()
     t.begin_fill()
     t.lt(100)
@@ -47,7 +47,7 @@ def draw(speed):
 
     # Trunk
     t.up()
-    t.setposition(-30,-75)
+    t.setposition(x_offset + -30,-75)
     t.down()
     t.fillcolor('brown')
     t.begin_fill()
@@ -61,7 +61,7 @@ def draw(speed):
 
     # Star on the top
     t.up()
-    t.setposition(-30,190)
+    t.setposition(x_offset + -30,190)
     t.fillcolor('yellow')
     t.begin_fill()
     t.rt(90)
@@ -73,62 +73,33 @@ def draw(speed):
 
     # Baubles
     t.up()
-    t.setposition(-55, 100)
+    t.setposition(x_offset + -55, 100)
     t.down()
     t.dot(20, 'blue')
 
     t.up()
-    t.setposition(55, 100)
+    t.setposition(x_offset + 55, 100)
     t.down()
     t.dot(20, 'purple')
 
     t.up()
-    t.setposition(-90, 20)
+    t.setposition(x_offset + -90, 20)
     t.down()
     t.dot(20, 'red')
 
     t.up()
-    t.setposition(90, 20)
+    t.setposition(x_offset + 90, 20)
     t.down()
     t.dot(20, 'yellow')
 
     t.up()
-    t.setposition(125, -80)
+    t.setposition(x_offset + 125, -80)
     t.down()
     t.dot(20, 'pink')
 
     t.up()
-    t.setposition(-125, -80)
+    t.setposition(x_offset + -125, -80)
     t.down()
     t.dot(20, 'orange')
 
     t.hideturtle()
-
-    # Flashing  Lights
-    light1 = turtle.Pen()
-    light2 = turtle.Pen()
-    light3 = turtle.Pen()
-
-    light1.up()
-    light1.setposition(0,-20)
-    light1.down()
-    light1.hideturtle()
-
-    light2.up()
-    light2.setposition(0,60)
-    light2.down()
-    light2.hideturtle()
-
-    light3.up()
-    light3.setposition(0,130)
-    light3.down()
-    light3.hideturtle()
-
-    # Flashing light
-    colors = ['red','yellow','blue']
-    counter = 0
-    while counter < 200:
-        light1.dot(20, colors[counter % 3])
-        light2.dot(20, colors[(counter + 1) % 3])
-        light3.dot(20, colors[(counter + 2) % 3])
-        counter = counter + 1
