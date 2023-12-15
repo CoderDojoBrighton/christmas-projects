@@ -1,10 +1,11 @@
 import turtle
 
 # Set up screen
-def draw():
+def draw(speed):
     # Create turtle
     t = turtle.Pen()
-    t.speed(2)
+    t.shapesize(2,2,2)
+    t.speed(speed)
 
     # Top tree section
     t.up()
@@ -126,7 +127,7 @@ def draw():
     # Flashing light
     colors = ['red','yellow','blue']
     counter = 0
-    while counter < 1000:
+    while counter < 200:
         light1.dot(20, colors[counter % 3])
         light2.dot(20, colors[(counter + 1) % 3])
         light3.dot(20, colors[(counter + 2) % 3])
