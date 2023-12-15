@@ -1,5 +1,14 @@
 # Christmas Projects
 
+## Presentation
+
+The presentation can be launched with
+
+```shell
+python code/presentation/presentation.py
+# or
+make presentation
+```
 
 ## Projects
 
@@ -30,6 +39,8 @@ You can find the installation instructions [here](https://gohugo.io/installation
 To run the docs:
 ```shell
 hugo serve
+# Or
+make docs
 ```
 This should live-reload as you edit content.
 
