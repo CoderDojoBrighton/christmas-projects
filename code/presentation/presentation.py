@@ -18,8 +18,6 @@ while True:
     snowflake.draw(800, 20)
     snowflake.draw(800, -40)
     snowflake.draw(800, 160)
-    # snowflake.draw(900, -10)
-    # snowflake.draw(300, 130)
     snowflake.draw(750, 230)
     christmas_tree.draw(speed, -600)
     christmas_tree.draw(speed, 550)
