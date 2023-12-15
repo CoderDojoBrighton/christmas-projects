@@ -1,4 +1,8 @@
+# Python
 venv
+__pycache__
+
+# Docs
 /public/
 /resources/_gen/
 /assets/jsconfig.json
