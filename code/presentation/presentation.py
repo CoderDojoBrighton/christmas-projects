@@ -6,7 +6,7 @@ width = 500
 height = 500
 s = turtle.Screen()
 s.setup(width, height)
-s.title("Christmas Tree!")
+s.title("CodeDojo Christmas")
 
 
 while True:
