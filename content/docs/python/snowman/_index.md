@@ -381,6 +381,99 @@ Our snowman is taking shape!
 Run your program and watch the face and buttons appear!
 ![Face and Buttons](/christmas-projects/snowman/face-buttons.png)
  
+## Drawing the Nose
+Now let's add a carrot for our snowman's nose!
+
+For this section we will guide our turtle manually as we cannot use our `draw_circle` function.
+
+We will do this with commands such as:
+- `t.forward()` - this tells our turtle to move forwards in whichever direction it is facing. The number tells the turtle how far to move.
+- `t.left()` and `t.right()` - this command tells our turtle to turn left or right and the number is the amount of degrees to turn.
+
+These commands are useful for any other projects that you'll work on in the future.
+
+Below the functions that we called to draw the face and buttons, let's add this code for the nose:
+```py
+# Nose
+t.color("orange")
+t.fillcolor("orange")
+t.penup()
+t.setposition(0, 105)
+t.begin_fill()
+t.pendown()
+t.right(150)
+t.forward(30)
+t.left(150)
+t.forward(30)
+t.goto(0, 105)
+t.end_fill()
+```
+
+**Congratulations!**
+You should see your nose drawn in the correct place!
+![Nose](/christmas-projects/snowman/nose.png)
+
+## Drawing the Hat
+Time to out a hat on our snowman!
+
+We can't use our `draw_circle()` function, so we will guide our turtle manually again.
+
+We also use a new command here:
+`t.pensize(5)` - This changes the thickness of our pen which is useful to remember for other projects that you work on.
+
+Below the code that we wrote to draw the snowman's nose, let's add some more code to draw our snowman's hat:
+```py
+# Hat
+t.color("black")
+t.fillcolor("black")
+t.begin_fill()
+t.penup()
+t.pensize(5)
+t.setposition(0, 150)
+t.pendown()
+t.forward(75)
+t.left(90)
+t.forward(10)
+t.left(90)
+t.forward(40)
+t.right(90)
+t.forward(60)
+t.left(90)
+t.forward(70)
+t.left(90)
+t.forward(60)
+t.right(90)
+t.forward(40)
+t.left(90)
+t.forward(10)
+t.left(90)
+t.goto(0, 150)
+t.end_fill()
+```
+
+If you run the code now, you will see that we have given our snowman a top hat, but we need to finish it off with a piece of ribbon:
+```py
+# Ribbon
+t.color("red")
+t.fillcolor("red")
+t.begin_fill()
+t.penup()
+t.setposition(1, 165)
+t.pendown()
+t.forward(34)
+t.left(90)
+t.forward(10)
+t.left(90)
+t.forward(70)
+t.left(90)
+t.forward(10)
+t.setposition(1, 165)
+t.end_fill()
+```
+
+**Congratulations!**
+Run your code and take a look at our new top hat, complete with ribbon!
+![Hat](/christmas-projects/snowman/hat.png)
 
 The complete code can be viewed [here](https://github.com/coderDojoBrighton/christmas-projects/blob/main/code/snowman.py)
 
