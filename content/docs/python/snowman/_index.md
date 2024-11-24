@@ -1,10 +1,10 @@
 ---
 weight: 1
 bookFlatSection: false
-title: "Christmas Tree"
+title: "Snowman"
 ---
 
-## Python Christmas Tree
+## Python Snowman
 
 Turtle graphics is a library in Python which can be used for drawing!
 You can imagine the turtle as a pen that you can move around the screen and draw with.
