@@ -24,6 +24,15 @@ To run:
 python code/christmas-tree.py
 ```
 
+### Snowman - Python
+
+A snowman with turtle graphics``
+
+To run:
+```
+python code/snowman.py
+```
+
 
 ## Running Docs Site Locally
 

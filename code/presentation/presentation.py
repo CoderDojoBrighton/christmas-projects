@@ -23,4 +23,4 @@ while True:
     christmas_tree.draw(speed, 550)
     lights.draw(speed, -600, 550)
 
-turtle.mainloop()
+turtle.done()

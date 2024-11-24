@@ -19,7 +19,7 @@ import turtle
 
 We need to set up the width and height of the screen to draw on.
 We can save these values as a *variable* so that it is easy to understand your code
-{{<hint info>}}
+{{% hint info %}}
 **What is a variable?**
 
 A variable is a way to store information in a computer program.
@@ -27,7 +27,7 @@ You can imagine it as a box with a label on it.
 The box stores something, and you refer to it by name on the label.
 
 In the below example, the label is `width`, and the contents is `500`.
-{{</hint>}}
+{{% /hint %}}
 
 ```py
 width = 500
@@ -41,7 +41,7 @@ s = turtle.Screen()
 ```
 
 To setup the screen, we can use the `s.setup()` function.
-{{<hint info>}}
+{{% hint info %}}
 **What is a function?**
 
 A function calls a piece of code written somewhere else.
@@ -49,7 +49,7 @@ You can pass values inside brackets called *parameters*, which the code can use.
 
 Certain variables, like your screen `s`, have functions written by other people that we can use.
 To use them, add a dot (`.`) after the variable, like below:
-{{</hint>}}
+{{% /hint %}}
 ```py
 s.setup(width, height)
 ```
@@ -74,15 +74,15 @@ We can set the speed of the turtle of a value between 1 and 10.
 t.speed(2)
 ```
 
-Finally, to keep the window open, we will need to call a function call `mainloop` from the `turtle` library.
+Finally, to keep the window open, we will need to call a function call `done` from the `turtle` library.
 
-{{<hint info>}}
+{{% hint info %}}
 **Note**:
 Python will execute your code from top to bottom, so keep this line at the bottom of your file so that it is the last thing to run!
-{{</hint>}}
+{{% /hint %}}
 
 ```py
-turtle.mainloop()
+turtle.done()
 ```
 
 Great!
@@ -104,7 +104,7 @@ t = turtle.Pen()
 t.speed(2)
 
 # Keep the window open
-turtle.mainloop()
+turtle.done()
 ```
 
 
@@ -112,9 +112,9 @@ turtle.mainloop()
 
 Let's start with the top of your christmas tree!
 
-{{<hint info>}}
+{{% hint info %}}
 **Note**: As you write your code, you can run it to see how the drawing is going!
-{{</hint>}}
+{{% /hint %}}
 
 Turtle works with coordinates (if you don't know what coordinates are, ask a mentor).
 The middle of the screen is the origin, `(0,0)`.
@@ -136,9 +136,9 @@ t.down()
 ```
 
 We want to fill (or paint) your drawing with green, so we set the fill colour to green.
-{{<hint info>}}
+{{% hint info %}}
 **Note:** We use the American spelling `color` instead of `colour` with turtle.
-{{</hint>}}
+{{% /hint %}}
 ```py
 t.fillcolor('green')
 t.begin_fill()
@@ -184,7 +184,7 @@ t.left(100)
 t.forward(95)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 and your tree should look like this:
 
@@ -249,7 +249,7 @@ t.lt(130)
 t.fd(100)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 Great!
@@ -272,7 +272,7 @@ t.lt(130)
 t.fd(100)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 
@@ -363,13 +363,13 @@ for i in range(5):
     t.fd(60)
     t.rt(144)
 ```
-{{<hint danger>}}
+{{% hint danger %}}
 **Why is there spaces on the left?**:
 
 In Python, *whitespace* (tabs and space) have a meaning!
 The contents of the loop will be indented to the right.
 When the loop is finished, we remove the space and go back to the left.
-{{</hint>}}
+{{% /hint %}}
 
 The above code will execute 5 times because `range(5)` will generate a list of 5 numbers (0 to 4).
 The number of times we have gone through the loop is stored in the variable `i`, but for this code we do not need to access it.
@@ -398,7 +398,7 @@ for i in range(5):
     t.rt(144)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 ## Adding Baubles
@@ -438,7 +438,7 @@ t.down()
 t.dot(20, 'blue')
 ...
 
-turtle.mainloop()
+turtle.done()
 ```
 
 ## Adding Flashing Lights
@@ -485,14 +485,14 @@ For example:
 ```py
 colors = ['red', 'yellow', 'blue']
 ```
-{{<hint info>}}
+{{% hint info %}}
 **Note:**
 In Python, lists start at 0.
 So the 0th colour is `'red'`, the 1st colour is `'yellow'`, and the 2nd colour is `'blue'`.
 
 You can get the colours out of the list, you can use square brackets.
 E.g. `colors[0]` is `'red'`.
-{{</hint>}}
+{{% /hint %}}
 
 Inside our loop, we want to set the colour of each of our lights:
 
