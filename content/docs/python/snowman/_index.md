@@ -341,8 +341,46 @@ And hide the cursor all together with:
 ```py
 t.hideturtle()
 ```
-
 {{% /hint %}}
+
+## Adding a Face and Buttons
+Lets call our function again a few more times to create the eyes, mouth and buttons of our snowman!
+
+Below the last function that we called, call another one to draw the left eye:
+```py
+# Left eye
+draw_circle(-30, 110, 8, "black", "black")
+```
+And another for the right eye:
+```py
+# Right eye
+draw_circle(30, 110, 8, "black", "black")
+```
+
+Now lets call some more functions to draw circles for the mouth:
+```py
+# Mouth
+draw_circle(-25, 75, 2, "black", "black")
+draw_circle(-15, 70, 2, "black", "black")
+draw_circle(-5, 68, 2, "black", "black")
+draw_circle(5, 68, 2, "black", "black")
+draw_circle(15, 70, 2, "black", "black")
+draw_circle(25, 75, 2, "black", "black")
+```
+
+Let's use our circle function for the last time to add some buttons:
+```py
+# Buttons
+draw_circle(0, -20, 8, "black", "black")
+draw_circle(0, -50, 8, "black", "black")
+draw_circle(0, -80, 8, "black", "black")
+```
+
+**Congratulations!**
+Our snowman is taking shape!
+Run your program and watch the face and buttons appear!
+![Face and Buttons](/christmas-projects/snowman/face-buttons.png)
+ 
 
 The complete code can be viewed [here](https://github.com/coderDojoBrighton/christmas-projects/blob/main/code/snowman.py)
 
