@@ -516,6 +516,8 @@ And another for the left arm:
 draw_arm(-70, -40, "chocolate")
 ```
 
+![Snowman](/christmas-projects/snowman/snowman.png)
+
 {{% hint info %}}
 In progessional programming there is a principle called *D.R.Y*, which stands for:
 - *Don't*
@@ -533,8 +535,6 @@ How about a different coloured hat, or ribbon, or buttons?
 Why not make your drawing into a Christmas card for family and friends!
 
 Or even take what you're learnt and draw your own patterns and pictures!
-
-![Snowman](/christmas-projects/snowman/snowman.png)
 
 The complete code can be viewed [here](https://github.com/coderDojoBrighton/christmas-projects/blob/main/code/snowman.py)
 
