@@ -475,5 +475,66 @@ t.end_fill()
 Run your code and take a look at our new top hat, complete with ribbon!
 ![Hat](/christmas-projects/snowman/hat.png)
 
+## Adding Arms
+It's time to add the last part of our snowman, the arms!
+
+We need to draw two arms, but we don't want all of our code repeated!
+
+This would be a good place to create another function to draw each arm.
+
+Let's add a new function:
+```py
+# Arms
+def draw_arm(x, y, pen_color):
+    t.color(pen_color)
+    t.pensize(7)
+    t.penup()
+    t.setposition(x, y)
+    t.pendown()
+    t.left(115)
+    t.forward(100)
+    t.left(45)
+    t.forward(30)
+    t.right(180)
+    t.forward(30)
+    t.left(90)
+    t.forward(30)
+    t.left(180)
+    t.forward(30)
+    t.right(130)
+    t.forward(30)
+```
+
+Now we add a call to the function to draw the right arm:
+```py
+# Right arm
+draw_arm(70, -40, "chocolate")
+```
+And another for the left arm:
+```py
+# Left arm
+draw_arm(-70, -40, "chocolate")
+```
+
+{{% hint info %}}
+In progessional programming there is a principle called *D.R.Y*, which stands for:
+- *Don't*
+- *Repeat*
+- *Yourself*
+
+This is a best practice that developers use to keep code clean and avoid adding unnecessary code.
+The coolest part is that you have been using the D.R.Y principle here today, to prevent having to repeat many lines of code to draw circles and arms!
+{{% /hint %}}
+
+**Well done!**
+
+Remember that this is **your** design and you can change it however you like!
+How about a different coloured hat, or ribbon, or buttons?
+Why not make your drawing into a Christmas card for family and friends!
+
+Or even take what you're learnt and draw your own patterns and pictures!
+
+![Snowman](/christmas-projects/snowman/snowman.png)
+
 The complete code can be viewed [here](https://github.com/coderDojoBrighton/christmas-projects/blob/main/code/snowman.py)
 
