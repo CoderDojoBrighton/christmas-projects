@@ -5,6 +5,7 @@ title: "Snowman"
 ---
 
 ## Python Snowman
+![Snowman](/christmas-projects/snowman/snowman.png)
 
 Turtle graphics is a library in Python which can be used for drawing!
 You can imagine the turtle as a pen that you can move around the screen and draw with.
@@ -178,7 +179,170 @@ t.end_fill()
 Your turtle should draw the base of the snowman!
 ![Base](/christmas-projects/snowman/base.png)
 
+
 ## The Power of Functions
+The design of the snowman will have a lot of circles which could mean repeating ourselves over and over again... boring!
+
+This is why programmers use *functions*!
+Understanding these will make our snowman come to life much quicker!
+
+{{% hint info %}}
+A function is like a box where we can store code so that we can re-use it again in the future if we want to, without having to write it all out again.
+
+In Python, the word `def` marks the start of a function.
+
+This is followed by the function's name, in this case `favourite_foods`.
+
+After this we always end the first line of our function with `():`
+
+Anything that we put after this first lin eis moved over to the right by using the 'tab' key on your keyboard.
+This tells the computer that the code is part of the instructions that we are putting inside the function box.
+
+For example, if we wanted our code to list our favourite foods, we could write it like this:
+```py
+def favourite_foods():
+    print("pizza")
+    print("biscuits")
+    print("chips")
+```
+
+This code won't do anything at the moment, as we need to 'call' it.
+'Calling' a function is how we use the set of instructions that we have put inside it.
+
+We can do this simply by writing the name of the function on the left, followed by brackets
+```py
+favourite_foods()
+```
+
+Our code would then write "pizza biscuits chips" on the screen because that is what the instructions inside `favourite_foods()` tell the computer to do.
+
+Sometimes though, our favourite foods change and we need a way to make our set of instructions easily re-usable.
+
+There is one final part to our function called 'arguments'.
+Arguments allow us to give information to the functions so that it can use this information when the time comes.
+
+Let's take our `favourite_foods()` function for example.
+```py
+def favourite_foods(food1, food2, food3):
+    print(food1)
+    print(food2)
+    print(food3)
+```
+
+We are telling our function that when we use itm we will tell it at that moment in time what our 3 favourite foods are with 3 arguments.
+
+If we use this function, we would call it like this:
+```py
+favourite_foods("pizza", "biscuits", "chips")
+```
+
+Our code would then write out the same line as before: "pizza biscuits chips".
+
+If we wanted to change our minds however, we could change the arguments we call the function with:
+```py
+favourite_foods("pizza", "chocolate", "chips")
+```
+
+This would then write "pizza chocolate chips"!
+{{% /hint %}}
+
+Let's take what we have learnt about functions and apply it to our snowman!
+
+At the moment, you should have the following code:
+```py
+t.color("white")
+t.fillcolor("white")
+t.begin_fill()
+t.penup()
+t.setposition(0, -395)
+t.pendown()
+t.circle(150)
+t.end_fill()
+```
+
+Now let's put our code inside of a function like this:
+```py
+def draw_circle():
+    t.color("white")
+    t.fillcolor("white")
+    t.begin_fill()
+    t.penup()
+    t.setposition(0, -395)
+    t.pendown()
+    t.circle(150)
+    t.end_fill()
+```
+
+Because we want to re-use our function for other circles as well, we need to replace some of the information with arguments to make it reusable:
+```py
+def draw_circle(x, y, radius, pen_color, fill_color):
+    t.color(pen_color)
+    t.fillcolor(fill_color)
+    t.begin_fill()
+    t.penup()
+    t.setposition(x, y)
+    t.pendown()
+    t.circle(radius)
+    t.end_fill()
+```
+
+In our code we have now replaced the specific values with arguments, which allows us to specify these when we call the functions as you'll see below!
+
+Now that we have the function finished, nothing will be printed to the screen unless we call it with the correct arguments passed in.
+Below your function, call it with the specific values that we had before:
+```py
+# Lower body
+draw_circle(0, -395, 150, "white", "white")
+```
+
+## Drawing the Body and Head of the Snowman!
+
+{{% hint info %}}
+If you have gotten this far, well done!
+
+Your hard work is paying off now that we are using functions to build our snowman.
+As you'll see, this next section will be much simpler because of it.
+
+The body and head of our snowman are made of two more circles, which is great, because we have a function that can draw circles!``
+
+We just need to pass our functions the correct arguments that correspond to the `x` and `y` position, the `radius` of the circle and the colours!
+{{% /hint %}}
+
+Below the last function that we called to draw the snowman's base, call another one with new arguments passed in like this:
+```py
+# Middle body
+draw_circle(0, -140, 100, "white", "white")
+```
+
+Now let's add another underneath like before, which will draw a circle for the head:
+```py
+# Head
+draw_circle(0, 30, 70, "white", "white")
+```
+
+**Congratulations!**
+You've drawn the snowman's body and head!
+![Body and Head](/christmas-projects/snowman/body-head.png)
+
+{{% hint info %}}
+**Optional:**
+As we add more sections to our drawing, we may not want to wait for our snowman to draw each time we press run.
+
+If you don't want to wait, you can add this line of code at the top of your project just below `t.bgcolor("skyblue")`:
+```py
+t.speed(0)
+```
+
+You can also make the turtle visible with:
+```py
+t.shape("turtle")
+```
+And hide the cursor all together with:
+```py
+t.hideturtle()
+```
+
+{{% /hint %}}
 
 The complete code can be viewed [here](https://github.com/coderDojoBrighton/christmas-projects/blob/main/code/snowman.py)
 
