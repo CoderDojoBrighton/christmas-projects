@@ -74,7 +74,7 @@ We can set the speed of the turtle of a value between 1 and 10.
 t.speed(2)
 ```
 
-Finally, to keep the window open, we will need to call a function call `mainloop` from the `turtle` library.
+Finally, to keep the window open, we will need to call a function call `done` from the `turtle` library.
 
 {{% hint info %}}
 **Note**:
@@ -82,7 +82,7 @@ Python will execute your code from top to bottom, so keep this line at the botto
 {{% /hint %}}
 
 ```py
-turtle.mainloop()
+turtle.done()
 ```
 
 Great!
@@ -104,7 +104,7 @@ t = turtle.Pen()
 t.speed(2)
 
 # Keep the window open
-turtle.mainloop()
+turtle.done()
 ```
 
 
@@ -184,7 +184,7 @@ t.left(100)
 t.forward(95)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 and your tree should look like this:
 
@@ -249,7 +249,7 @@ t.lt(130)
 t.fd(100)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 Great!
@@ -272,7 +272,7 @@ t.lt(130)
 t.fd(100)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 
@@ -398,7 +398,7 @@ for i in range(5):
     t.rt(144)
 t.end_fill()
 
-turtle.mainloop()
+turtle.done()
 ```
 
 ## Adding Baubles
@@ -438,7 +438,7 @@ t.down()
 t.dot(20, 'blue')
 ...
 
-turtle.mainloop()
+turtle.done()
 ```
 
 ## Adding Flashing Lights

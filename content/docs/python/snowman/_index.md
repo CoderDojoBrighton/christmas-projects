@@ -18,7 +18,7 @@ import turtle
 
 ## Setting Up the Screen
 
-We need to set up the idth and height of the screen to draw on.
+We need to set up the width and height of the screen to draw on.
 We can save these values as a *variable* so that it is easy to understand your code
 {{% hint info %}}
 **What is a variable?**
@@ -80,7 +80,7 @@ We can set the speed of the turtle of a value between 1 and 10.
 t.speed(2)
 ```
 
-Finally, to keep the window open, we will need to call a function call `mainloop` from the `turtle` library.
+Finally, to keep the window open, we will need to call a function call `done` from the `turtle` library.
 
 {{% hint info %}}
 **Note**:
@@ -88,7 +88,7 @@ Python will execute your code from top to bottom, so keep this line at the botto
 {{% /hint %}}
 
 ```py
-turtle.mainloop()
+turtle.done()
 ```
 
 Great!
@@ -111,7 +111,7 @@ t = turtle.Pen()
 t.speed(2)
 
 # Keep the window open
-turtle.mainloop()
+turtle.done()
 ```
 
 {{% hint info %}}

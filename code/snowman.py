@@ -141,5 +141,5 @@ draw_arm(70, -40, "chocolate")
 # Left arm
 draw_arm(-70, -40, "chocolate")
 
-# Keep the window ot when done drawing
+# Keep the window open when done drawing
 turtle.done()

@@ -137,4 +137,4 @@ while True:
     light3.dot(20, colors[(counter + 2) % 3])
     counter = counter + 1
 
-turtle.mainloop()
+turtle.done()
